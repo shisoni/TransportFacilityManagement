@@ -72,7 +72,7 @@ app.post('/api/addRide', function(req, res) {
         vacantSeats : req.body.vacantSeats,
         date : Date.now()
     })
-    
+     
     collection1.save(ride)
     .then(result => {
     })
