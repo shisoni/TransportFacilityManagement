@@ -75,7 +75,7 @@ export class AppComponent {
 
       
      this.transportService.getBookingDetails(empId.value).subscribe(data=>{
-       if(data == 1){
+       if(data > 0){
         this.message = "Cannot make two bookings!";
         this.showMessage2 = true;
        }
